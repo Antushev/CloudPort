@@ -1,0 +1,53 @@
+{
+  "name": "web-client-cloud",
+  "version": "1.0.0",
+  "description": "Web client for clients",
+  "main": "index.js",
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfg && npm run stylelint",
+    "build": "gulp build",
+    "start": "webpack-dev-server --open",
+    "bundle": "webpack"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-libsquoosh": "^1.0.12",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^4.0.1",
+    "postcss-csso": "^6.0.0",
+    "posthtml-include": "^1.7.2",
+    "sass": "^1.49.8",
+    "stylelint": "^14.5.1",
+    "stylelint-config-htmlacademy": "^0.1.12"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "del": "^6.0.0",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
